@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Site Picker</title>
+</head>
+<body>
+	<h1>Random <a href="" target="_blank" id="clicker">link</a></h1>
+
+<script type="text/javascript">
+
+	var sites = ["https://www.w3schools.com/", "https://www.ksl.com/", "https://www.google.com/", "https://www.bing.com/"];
+	var randSite = sites[Math.floor(Math.random() * sites.length)];
+
+	
+	document.getElementById("clicker").onclick=function() {
+		document.getElementById("clicker").href = randSite;
+		randSite = sites[Math.floor(Math.random() * sites.length)];
+	}
+
+</script>
+
+</body>
+</html>
